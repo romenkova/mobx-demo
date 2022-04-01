@@ -14,16 +14,20 @@ const TodoListView: React.FC = observer(() => {
       <h1>todo app</h1>
 
       {todoList.todos.map((todo) => (
-        <TodoItem todo={todo} onDelete={() => todoList.onDelete(todo.id)} />
+        <TodoItem
+          todo={todo}
+          onDelete={() => todoList.onDelete(todo.id)}
+          key={todo.id}
+        />
       ))}
 
-      <button className='button' onClick={todoList.onAdd}>
+      <button className="button" onClick={todoList.onAdd}>
         add new task
       </button>
 
       <button
         onClick={() => console.log(getSnapshot(todoList))}
-        className='button'
+        className="button"
       >
         save
       </button>
