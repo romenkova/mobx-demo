@@ -1,0 +1,37 @@
+.todo {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.todo-input {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.todo-input {
+  border: 1px solid #eee;
+  padding: 5px;
+  outline: none;
+  border-radius: 3px;
+}
+
+.todo-input:focus {
+  border: 1px solid #aaa;
+}
+
+.button {
+  margin: 0 5px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px 20px;
+}
